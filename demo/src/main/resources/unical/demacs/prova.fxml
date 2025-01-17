@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane fx:id="mainAnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="unical.demacs.Controller.EditorController">
+   <children>
+      <ButtonBar fx:id="buttonBar" layoutY="6.0" prefHeight="40.0" prefWidth="444.0" AnchorPane.topAnchor="0.0">
+        <buttons>
+          <Button fx:id="openButton" mnemonicParsing="false" onAction="#onClickOpenButton" text="Open" />
+            <Button fx:id="saveButton" mnemonicParsing="false" onAction="#onClickSaveButton" text="Save" />
+            <Button fx:id="resizeButton" mnemonicParsing="false" onAction="#onClickResizeButton" prefHeight="26.0" prefWidth="118.0" text="Resize" />
+            <MenuButton fx:id="filterButton" mnemonicParsing="false" onAction="#onClickFilterButton" prefHeight="26.0" text="Apply Filter">
+              <items>
+                <MenuItem fx:id="grayScaleItem" mnemonicParsing="false" onAction="#onClickGrayScaleItem" text="Gray Scale" />
+                  <MenuItem fx:id="negativeItem" mnemonicParsing="false" onAction="#onClickNegativeItem" text="Negative" />
+                <MenuItem fx:id="sepiaItem" mnemonicParsing="false" onAction="#onClickSepiaItem" text="Sepia" />
+              </items>
+            </MenuButton>
+        </buttons>
+      </ButtonBar>
+      <ImageView fx:id="imageView" fitHeight="315.0" fitWidth="547.0" layoutX="24.0" layoutY="85.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="50.0"/>
+   </children>
+</AnchorPane>
