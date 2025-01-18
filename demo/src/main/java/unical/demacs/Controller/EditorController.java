@@ -55,6 +55,7 @@ public class EditorController {
 
     @FXML
     private MenuItem sepiaItem;
+    
 
     @FXML
     void onClickNegativeItem(ActionEvent event) {
@@ -97,7 +98,6 @@ public class EditorController {
             Image image  = imageEditor.loadImage(path);
             this.image = image;
             imageView.setImage(image);
-
         }
 
     }

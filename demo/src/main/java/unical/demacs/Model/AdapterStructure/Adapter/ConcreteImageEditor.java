@@ -2,7 +2,6 @@ package unical.demacs.Model.AdapterStructure.Adapter;
 
 import javafx.scene.image.Image;
 import unical.demacs.Model.AdapterStructure.Target.ImageEditor;
-
 import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.File;
